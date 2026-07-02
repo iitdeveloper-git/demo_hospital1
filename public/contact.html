@@ -30,6 +30,9 @@ body{color:var(--ac-text);background:#f6fbff!important}.ac-header,.header,.site-
 </style>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="shortcut icon" href="/favicon.svg">
+<style id="floating-contact-buttons">
+.floating-contact{position:fixed;right:22px;bottom:24px;z-index:1200;display:grid;gap:12px}.floating-contact a{display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;color:#fff;text-decoration:none;font-size:24px;box-shadow:0 16px 36px rgba(16,32,51,.22);transition:transform .2s ease,box-shadow .2s ease}.floating-contact a:hover{transform:translateY(-3px);box-shadow:0 20px 44px rgba(16,32,51,.28)}.floating-contact .whatsapp{background:#25d366}.floating-contact .call{background:#1877f2}@media(max-width:620px){.floating-contact{right:16px;bottom:18px}.floating-contact a{width:50px;height:50px;font-size:22px}}
+</style>
 </head>
 <body>
 <header class="ac-header"><div class="ac-wrap"><a class="ac-brand" href="/"><span class="ac-brand-mark"><i class="fa-solid fa-heart-pulse"></i></span>AarogyaCare</a><nav class="ac-nav"><a href="/about">About</a><a href="/services">Services</a><a href="/doctors">Doctors</a><a href="/#departments">Departments</a><a class="active" href="/contact">Contact</a></nav><div class="ac-actions"><a class="ac-btn ac-btn-soft" href="tel:+911800123456"><i class="fa-solid fa-phone"></i> Emergency</a><a class="ac-btn ac-btn-blue" href="/booking">Book Appointment</a><button class="ac-btn ac-btn-soft ac-menu" type="button"><i class="fa-solid fa-bars"></i></button></div></div></header>
@@ -48,8 +51,10 @@ body{color:var(--ac-text);background:#f6fbff!important}.ac-header,.header,.site-
     <footer class="footer"><div class="footer-top"><div><div class="logo"><i class="fa-solid fa-heart-pulse"></i> AarogyaCare</div><p>Advanced healthcare, diagnostics, emergency support, and digital patient experience.</p><div class="socials"><a><i class="fa-brands fa-x-twitter"></i></a><a><i class="fa-brands fa-facebook-f"></i></a><a><i class="fa-brands fa-youtube"></i></a><a><i class="fa-brands fa-instagram"></i></a></div></div><div><h3>Company</h3><a href="/about">About Us</a><a href="/contact">Contact Us</a><a>Patient Coverage</a><a>Careers</a></div><div><h3>Services</h3><a>Order Medicines</a><a>Book Lab Tests</a><a>Consult a Doctor</a><a>Ayurveda Articles</a></div><div><h3>Contact</h3><p>Outer Ring Road, near HealthTech Park, Bengaluru<br>care@aarogyacare.test<br>+91 1800 123 456</p></div><div class="newsletter"><h3>Newsletter</h3><p>Get healthcare updates in your inbox.</p><input placeholder="Enter your email"><button>Subscribe</button></div></div><div class="bottom">© 2025 AarogyaCare. <a href="https://iitdeveloper.com/" target="_blank" rel="noopener">IIT-Developer</a> ke through banaya gaya. All rights reserved.</div></footer>
     <div class="modal" data-modal><div class="modal-card"><i class="fa-solid fa-check"></i><h2>Message Sent</h2><p>Thank you. AarogyaCare care desk will contact you shortly.</p><button class="newsletter button" data-close style="border:0;border-radius:999px;background:#0968c8;color:#fff;min-height:42px;padding:0 20px;font-weight:900">Done</button></div></div>
     <script>const modal=document.querySelector('[data-modal]');document.querySelector('[data-contact-form]').addEventListener('submit',e=>{e.preventDefault();modal.classList.add('show');e.currentTarget.reset()});document.querySelector('[data-close]').addEventListener('click',()=>modal.classList.remove('show'));modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show')});</script>
+<div class="floating-contact" aria-label="Quick contact"><a class="whatsapp" href="https://wa.me/911800123456?text=Hello%20AarogyaCare%2C%20I%20want%20to%20book%20an%20appointment" target="_blank" rel="noopener" aria-label="WhatsApp AarogyaCare"><i class="fa-brands fa-whatsapp"></i></a><a class="call" href="tel:+911800123456" aria-label="Call AarogyaCare"><i class="fa-solid fa-phone"></i></a></div>
 </body>
 </html>
+
 
 
 

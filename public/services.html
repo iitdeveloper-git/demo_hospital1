@@ -20,6 +20,9 @@ body{color:var(--ac-text);background:#f6fbff!important}.ac-header,.header,.site-
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="shortcut icon" href="/favicon.svg">
 <style id="services-hero-white-text">.services-hero h1,.services-hero p{color:#ffffff!important}.services-hero .about-breadcrumbs,.services-hero .about-breadcrumbs a,.services-hero .about-breadcrumbs span{color:rgba(255,255,255,.92)!important}.services-hero .about-breadcrumbs .separator{color:rgba(255,255,255,.7)!important}</style>
+<style id="floating-contact-buttons">
+.floating-contact{position:fixed;right:22px;bottom:24px;z-index:1200;display:grid;gap:12px}.floating-contact a{display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;color:#fff;text-decoration:none;font-size:24px;box-shadow:0 16px 36px rgba(16,32,51,.22);transition:transform .2s ease,box-shadow .2s ease}.floating-contact a:hover{transform:translateY(-3px);box-shadow:0 20px 44px rgba(16,32,51,.28)}.floating-contact .whatsapp{background:#25d366}.floating-contact .call{background:#1877f2}@media(max-width:620px){.floating-contact{right:16px;bottom:18px}.floating-contact a{width:50px;height:50px;font-size:22px}}
+</style>
 </head>
 <body>
 <header class="ac-header"><div class="ac-wrap"><a class="ac-brand" href="/"><span class="ac-brand-mark"><i class="fa-solid fa-heart-pulse"></i></span>AarogyaCare</a><nav class="ac-nav"><a href="/about">About</a><a class="active" href="/services">Services</a><a href="/doctors">Doctors</a><a href="/#departments">Departments</a><a href="/contact">Contact</a></nav><div class="ac-actions"><a class="ac-btn ac-btn-soft" href="tel:+911800123456"><i class="fa-solid fa-phone"></i> Emergency</a><a class="ac-btn ac-btn-blue" href="/booking">Book Appointment</a><button class="ac-btn ac-btn-soft ac-menu" type="button"><i class="fa-solid fa-bars"></i></button></div></div></header>
@@ -563,8 +566,10 @@ body{color:var(--ac-text);background:#f6fbff!important}.ac-header,.header,.site-
         cards.forEach(card => container.appendChild(card));
     }
     </script>
+<div class="floating-contact" aria-label="Quick contact"><a class="whatsapp" href="https://wa.me/911800123456?text=Hello%20AarogyaCare%2C%20I%20want%20to%20book%20an%20appointment" target="_blank" rel="noopener" aria-label="WhatsApp AarogyaCare"><i class="fa-brands fa-whatsapp"></i></a><a class="call" href="tel:+911800123456" aria-label="Call AarogyaCare"><i class="fa-solid fa-phone"></i></a></div>
 </body>
 </html>
+
 
 
 

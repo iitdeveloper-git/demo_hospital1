@@ -30,6 +30,9 @@ body{color:var(--ac-text);background:#f6fbff!important}.ac-header,.header,.site-
 <style id="about-sky-fix">.hero{background:linear-gradient(135deg,#dff3ff 0%,#c8ecff 55%,#f8fdff 100%)!important;color:var(--ac-text)!important}.hero p{color:var(--ac-muted)!important}.hero:after{background:#fff}.store{background:#10213a}@media(max-width:760px){.subscribe{grid-template-columns:1fr;margin:20px}.subscribe strong{white-space:normal}.subscribe button{width:100%}}</style>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="shortcut icon" href="/favicon.svg">
+<style id="floating-contact-buttons">
+.floating-contact{position:fixed;right:22px;bottom:24px;z-index:1200;display:grid;gap:12px}.floating-contact a{display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;color:#fff;text-decoration:none;font-size:24px;box-shadow:0 16px 36px rgba(16,32,51,.22);transition:transform .2s ease,box-shadow .2s ease}.floating-contact a:hover{transform:translateY(-3px);box-shadow:0 20px 44px rgba(16,32,51,.28)}.floating-contact .whatsapp{background:#25d366}.floating-contact .call{background:#1877f2}@media(max-width:620px){.floating-contact{right:16px;bottom:18px}.floating-contact a{width:50px;height:50px;font-size:22px}}
+</style>
 </head>
 <body>
 <header class="ac-header"><div class="ac-wrap"><a class="ac-brand" href="/"><span class="ac-brand-mark"><i class="fa-solid fa-heart-pulse"></i></span>AarogyaCare</a><nav class="ac-nav"><a class="active" href="/about">About</a><a href="/services">Services</a><a href="/doctors">Doctors</a><a href="/#departments">Departments</a><a href="/contact">Contact</a></nav><div class="ac-actions"><a class="ac-btn ac-btn-soft" href="tel:+911800123456"><i class="fa-solid fa-phone"></i> Emergency</a><a class="ac-btn ac-btn-blue" href="/booking">Book Appointment</a><button class="ac-btn ac-btn-soft ac-menu" type="button"><i class="fa-solid fa-bars"></i></button></div></div></header>
@@ -60,8 +63,10 @@ body{color:var(--ac-text);background:#f6fbff!important}.ac-header,.header,.site-
         <form class="subscribe"><strong>Subscribe to get updated</strong><input type="email" placeholder="Email address"><button class="btn btn-light" type="button">Submit</button></form>
         <footer class="footer" id="contact"><div><h3>AarogyaCare</h3><p>Advanced healthcare, diagnostics, emergency support, and digital patient experience.</p></div><div><h3>Categories</h3><a>Diagnostics</a><a>Doctors</a><a>Emergency</a></div><div><h3>About</h3><a>Mission</a><a>Vision</a><a>Values</a></div><div><h3>Contact</h3><p>+91 1800 123 456<br>Bengaluru, Karnataka<br>care@aarogyacare.test</p></div></footer><div class="bottom">© 2025 AarogyaCare. <a href="https://iitdeveloper.com/" target="_blank" rel="noopener">IIT-Developer</a> ke through banaya gaya. All rights reserved.</div>
     </div>
+<div class="floating-contact" aria-label="Quick contact"><a class="whatsapp" href="https://wa.me/911800123456?text=Hello%20AarogyaCare%2C%20I%20want%20to%20book%20an%20appointment" target="_blank" rel="noopener" aria-label="WhatsApp AarogyaCare"><i class="fa-brands fa-whatsapp"></i></a><a class="call" href="tel:+911800123456" aria-label="Call AarogyaCare"><i class="fa-solid fa-phone"></i></a></div>
 </body>
 </html>
+
 
 
 
