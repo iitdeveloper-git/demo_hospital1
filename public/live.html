@@ -1,0 +1,263 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedovaCare - Premium Hospital Website Live Preview</title>
+    <meta name="description" content="MedovaCare premium AI powered hospital website live preview.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../resources/css/app.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.svg">
+</head>
+<body>
+    <div class="loader" data-loader><span></span></div>
+    <div class="top-bar">
+        <div class="top-bar__left">
+            <a href="tel:+911800123456"><i class="fa-solid fa-truck-medical"></i> Emergency: +91 1800 123 456</a>
+            <a href="mailto:care@medovacare.com"><i class="fa-solid fa-envelope"></i> care@medovacare.com</a>
+            <span><i class="fa-solid fa-clock"></i> Mon-Sun: 24 Hours</span>
+        </div>
+        <div class="top-bar__right">
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <label class="language-switcher"><select><option>EN</option><option>HI</option></select></label>
+            <a class="top-login" href="#patient-portal">Patient Login</a>
+            <a class="top-login" href="#doctor-portal">Doctor Login</a>
+            <a class="top-appointment" href="#appointment">Book Appointment</a>
+        </div>
+    </div>
+    <header class="site-header premium-header" data-site-header>
+        <a class="brand" href="#home"><span class="brand-mark"><i class="fa-solid fa-heart-pulse"></i></span><span>MedovaCare</span></a>
+        <button class="mobile-menu-button" data-mobile-menu-button aria-label="Open mobile menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        <nav class="site-nav mega-nav" data-mobile-menu>
+            <a href="#home">Home</a><a href="#about">About</a><a href="#departments">Departments</a><a href="#doctors">Doctors</a><a href="#services">Services</a><a href="#packages">Health Packages</a><a href="#gallery">Gallery</a><a href="#blog">Blog</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-button" data-search-toggle aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="icon-button notification-button" data-toast="You have 3 care notifications." aria-label="Notifications"><i class="fa-regular fa-bell"></i><span></span></button>
+            <button class="icon-button" data-theme-toggle aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+            <a class="btn btn-primary ripple" href="#appointment">Book Appointment</a>
+        </div>
+    </header>
+    <div class="search-overlay" data-search-overlay hidden>
+        <div class="search-dialog">
+            <button class="icon-button" data-search-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <label>Search MedovaCare<input type="search" placeholder="Search departments, doctors, packages..."></label>
+            <div class="search-suggestions"><a href="#doctors">Find a doctor</a><a href="#appointment">Book appointment</a><a href="#departments">Departments</a></div>
+        </div>
+    </div>
+
+    <main>
+        <section class="home-hero" id="home">
+            <div class="hero-bg-shape hero-bg-shape--one"></div><div class="hero-bg-shape hero-bg-shape--two"></div>
+            <div class="home-hero__copy">
+                <span class="hero-badge"><i class="fa-solid fa-shield-heart"></i> Trusted by modern care teams</span>
+                <h1>Advanced Healthcare For Your Family</h1>
+                <p>Experience premium, connected hospital care with AI-assisted triage, expert doctors, digital records, diagnostics, pharmacy, insurance, and emergency support in one elegant ecosystem.</p>
+                <div class="hero-actions"><a class="btn btn-primary ripple" href="#appointment"><i class="fa-solid fa-calendar-check"></i> Book Appointment</a><a class="btn btn-soft ripple" href="#doctors"><i class="fa-solid fa-user-doctor"></i> Find Doctor</a></div>
+                <div class="hero-trust"><span><strong>24x7</strong> Emergency</span><span><strong>100+</strong> Doctors</span><span><strong>50,000+</strong> Happy Patients</span></div>
+            </div>
+            <div class="home-hero__visual">
+                <div class="image-orbit">
+                    <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1100&q=86" alt="Smiling doctor in modern hospital">
+                    <div class="hero-float-card float-card--top"><i class="fa-solid fa-user-doctor"></i><strong>100+</strong><span>Expert Doctors</span></div>
+                    <div class="hero-float-card float-card--bottom"><i class="fa-solid fa-heart-pulse"></i><strong>98%</strong><span>Satisfaction</span></div>
+                    <i class="medical-float medical-float--ambulance fa-solid fa-truck-medical"></i>
+                    <i class="medical-float medical-float--heart fa-solid fa-heart-pulse"></i>
+                    <i class="medical-float medical-float--cross fa-solid fa-square-plus"></i>
+                </div>
+            </div>
+            <a class="scroll-indicator" href="#services"><span></span></a>
+        </section>
+
+        <section class="section quick-services" id="services">
+            <div class="section-heading section-heading--center"><span class="eyebrow">Quick Access</span><h2>Care services one tap away</h2><p>Fast actions for patients, families, doctors, and hospital coordinators.</p></div>
+            <div class="quick-service-grid">
+                <a class="icon-service-card hover-lift" href="#appointment"><span><i class="fa-solid fa-calendar-check"></i></span><strong>Book Appointment</strong><small>Priority OPD slots</small></a>
+                <a class="icon-service-card hover-lift" href="tel:+911800123456"><span><i class="fa-solid fa-truck-medical"></i></span><strong>Emergency</strong><small>24x7 trauma desk</small></a>
+                <a class="icon-service-card hover-lift" href="#doctors"><span><i class="fa-solid fa-user-doctor"></i></span><strong>Find Doctor</strong><small>Verified specialists</small></a>
+                <a class="icon-service-card hover-lift" href="#departments"><span><i class="fa-solid fa-hospital"></i></span><strong>Departments</strong><small>Specialty units</small></a>
+                <a class="icon-service-card hover-lift" href="#appointment"><span><i class="fa-solid fa-vial-circle-check"></i></span><strong>Lab Test</strong><small>Digital reports</small></a>
+                <a class="icon-service-card hover-lift" href="#packages"><span><i class="fa-solid fa-notes-medical"></i></span><strong>Health Packages</strong><small>Preventive plans</small></a>
+                <a class="icon-service-card hover-lift" href="#appointment"><span><i class="fa-solid fa-video"></i></span><strong>Online Consultation</strong><small>Secure virtual care</small></a>
+                <a class="icon-service-card hover-lift" href="#records"><span><i class="fa-solid fa-file-medical"></i></span><strong>Medical Records</strong><small>Digital EMR history</small></a>
+            </div>
+        </section>
+
+        <section class="section split-band" id="patient-portal">
+            <div><span class="eyebrow">Patient Portal</span><h2>Appointments, reports, bills, prescriptions, and insurance in one place.</h2><p>Patients can manage care journeys with secure digital records and notifications.</p></div>
+            <div class="portal-grid"><a href="#appointment"><i class="fa-solid fa-calendar-check"></i>Book Visit</a><a href="#records"><i class="fa-solid fa-file-medical"></i>Medical Records</a><a href="#packages"><i class="fa-solid fa-notes-medical"></i>Health Packages</a><a href="#contact"><i class="fa-solid fa-headset"></i>Care Support</a></div>
+        </section>
+
+        <section class="section split-band" id="doctor-portal">
+            <div><span class="eyebrow">Doctor Portal</span><h2>Daily patient queue, schedules, reports, prescriptions, and video consultation.</h2><p>Doctors get a focused command surface for faster decisions and coordinated treatment.</p></div>
+            <div class="portal-grid"><a href="#doctors"><i class="fa-solid fa-user-doctor"></i>Specialists</a><a href="#appointment"><i class="fa-solid fa-stethoscope"></i>Consultation</a><a href="#records"><i class="fa-solid fa-laptop-medical"></i>Digital EMR</a><a href="#faq"><i class="fa-solid fa-circle-question"></i>Clinical Help</a></div>
+        </section>
+
+        <section class="stats-band" data-counter-section>
+            <div class="stat-item"><strong data-counter="100" data-suffix="+">0</strong><span>Doctors</span></div>
+            <div class="stat-item"><strong data-counter="10000" data-suffix="+">0</strong><span>Patients</span></div>
+            <div class="stat-item"><strong data-counter="25" data-suffix="+">0</strong><span>Departments</span></div>
+            <div class="stat-item"><strong data-counter="50000" data-suffix="+">0</strong><span>Appointments</span></div>
+            <div class="stat-item"><strong data-counter="98" data-suffix="%">0</strong><span>Patient Satisfaction</span></div>
+        </section>
+
+        <section class="section about-preview" id="about">
+            <div class="about-image-stack"><img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=1100&q=84" alt="Hospital leadership"><div class="ceo-card"><strong>Dr. Kavita Rao</strong><span>Chief Executive Officer</span><p>Care should feel precise, personal, and reassuring at every step.</p></div></div>
+            <div><div class="section-heading"><span class="eyebrow">About MedovaCare</span><h2>Clinical excellence with a deeply human touch</h2><p>Specialists, diagnostics, pharmacy, billing, insurance, and digital patient engagement in a calm premium experience.</p></div><div class="mission-grid"><article><i class="fa-solid fa-bullseye"></i><h3>Mission</h3><p>Safe, transparent, connected healthcare for every family.</p></article><article><i class="fa-solid fa-eye"></i><h3>Vision</h3><p>The most trusted smart hospital platform for modern institutions.</p></article></div><a class="btn btn-soft ripple" href="#departments">Read More</a></div>
+        </section>
+
+        <section class="section departments-showcase" id="departments">
+            <div class="section-heading section-heading--center"><span class="eyebrow">Departments</span><h2>Specialty care departments</h2><p>Integrated departments for faster diagnosis and measurable outcomes.</p></div>
+            <div class="department-grid">
+                <article class="department-card hover-lift"><img src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?auto=format&fit=crop&w=900&q=82" alt="Cardiology"><span><i class="fa-solid fa-heart-pulse"></i></span><h3>Cardiology</h3><p>Heart care, cath lab coordination, cardiac risk scoring, and recovery plans.</p><a href="#appointment">Explore <i class="fa-solid fa-arrow-right"></i></a></article>
+                <article class="department-card hover-lift"><img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=900&q=82" alt="Neurology"><span><i class="fa-solid fa-brain"></i></span><h3>Neurology</h3><p>Stroke response, neuro diagnostics, memory care, and rehabilitation pathways.</p><a href="#appointment">Explore <i class="fa-solid fa-arrow-right"></i></a></article>
+                <article class="department-card hover-lift"><img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=900&q=82" alt="Orthopedic"><span><i class="fa-solid fa-bone"></i></span><h3>Orthopedic</h3><p>Joint replacement, sports injury, spine care, and physiotherapy support.</p><a href="#appointment">Explore <i class="fa-solid fa-arrow-right"></i></a></article>
+                <article class="department-card hover-lift"><img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=82" alt="Radiology"><span><i class="fa-solid fa-x-ray"></i></span><h3>Radiology</h3><p>MRI, CT, ultrasound, X-ray, and AI-supported imaging reports.</p><a href="#appointment">Explore <i class="fa-solid fa-arrow-right"></i></a></article>
+            </div>
+        </section>
+
+        <section class="section doctors-showcase" id="doctors">
+            <div class="section-heading section-heading--center"><span class="eyebrow">Featured Doctors</span><h2>Meet trusted medical specialists</h2><p>Experienced clinicians supported by digital workflows and care coordinators.</p></div>
+            <div class="doctor-grid">
+                <article class="doctor-card hover-lift"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=82" alt="Dr Aanya"><div><span>18 Years</span><span><i class="fa-solid fa-star"></i> 4.9</span></div><h3>Dr. Aanya Sharma</h3><p>Senior Cardiologist - MD, DM Cardiology</p><div class="card-actions"><a class="btn btn-primary ripple" href="#appointment">Book</a><a class="btn btn-soft ripple" href="#doctors">Profile</a></div></article>
+                <article class="doctor-card hover-lift"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=700&q=82" alt="Dr Rohan"><div><span>16 Years</span><span><i class="fa-solid fa-star"></i> 4.8</span></div><h3>Dr. Rohan Mehta</h3><p>Neurosurgeon - MS, MCh Neuro</p><div class="card-actions"><a class="btn btn-primary ripple" href="#appointment">Book</a><a class="btn btn-soft ripple" href="#doctors">Profile</a></div></article>
+                <article class="doctor-card hover-lift"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=700&q=82" alt="Dr Nisha"><div><span>12 Years</span><span><i class="fa-solid fa-star"></i> 4.9</span></div><h3>Dr. Nisha Iyer</h3><p>Pediatrician - MD Pediatrics</p><div class="card-actions"><a class="btn btn-primary ripple" href="#appointment">Book</a><a class="btn btn-soft ripple" href="#doctors">Profile</a></div></article>
+                <article class="doctor-card hover-lift"><img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=700&q=82" alt="Dr Kabir"><div><span>14 Years</span><span><i class="fa-solid fa-star"></i> 4.7</span></div><h3>Dr. Kabir Sethi</h3><p>Orthopedic Surgeon - MS Ortho</p><div class="card-actions"><a class="btn btn-primary ripple" href="#appointment">Book</a><a class="btn btn-soft ripple" href="#doctors">Profile</a></div></article>
+            </div>
+        </section>
+
+        <section class="section why-choose"><div class="section-heading section-heading--center"><span class="eyebrow">Why Choose Us</span><h2>Hospital care designed around trust</h2></div><div class="why-grid"><article class="why-card hover-lift"><i class="fa-solid fa-user-doctor"></i><h3>Experienced Doctors</h3><p>Verified specialist teams.</p></article><article class="why-card hover-lift"><i class="fa-solid fa-microscope"></i><h3>Modern Equipment</h3><p>Advanced diagnostic systems.</p></article><article class="why-card hover-lift"><i class="fa-solid fa-truck-medical"></i><h3>Emergency Care</h3><p>24x7 response and triage.</p></article><article class="why-card hover-lift"><i class="fa-solid fa-file-shield"></i><h3>Digital Records</h3><p>Secure EMR access.</p></article><article class="why-card hover-lift"><i class="fa-solid fa-hand-holding-dollar"></i><h3>Affordable Treatment</h3><p>Transparent estimates.</p></article><article class="why-card hover-lift"><i class="fa-solid fa-shield-heart"></i><h3>Insurance Support</h3><p>Cashless workflow help.</p></article></div></section>
+
+        <section class="section package-section" id="packages"><div class="section-heading section-heading--center"><span class="eyebrow">Health Packages</span><h2>Preventive care plans</h2></div><div class="package-grid">
+            <article class="package-card hover-lift"><h3>Silver Package</h3><strong>$49</strong><ul><li><i class="fa-solid fa-check"></i>CBC and ESR</li><li><i class="fa-solid fa-check"></i>Liver profile</li><li><i class="fa-solid fa-check"></i>Doctor review</li></ul><a class="btn btn-primary ripple" href="#appointment">Book Now</a></article>
+            <article class="package-card hover-lift"><h3>Gold Package</h3><strong>$89</strong><ul><li><i class="fa-solid fa-check"></i>Silver benefits</li><li><i class="fa-solid fa-check"></i>Cardiac markers</li><li><i class="fa-solid fa-check"></i>Diet consultation</li></ul><a class="btn btn-primary ripple" href="#appointment">Book Now</a></article>
+            <article class="package-card hover-lift"><h3>Premium Package</h3><strong>$149</strong><ul><li><i class="fa-solid fa-check"></i>Gold benefits</li><li><i class="fa-solid fa-check"></i>Specialist consult</li><li><i class="fa-solid fa-check"></i>Priority lounge</li></ul><a class="btn btn-primary ripple" href="#appointment">Book Now</a></article>
+            <article class="package-card hover-lift"><h3>Family Package</h3><strong>$249</strong><ul><li><i class="fa-solid fa-check"></i>Four members</li><li><i class="fa-solid fa-check"></i>Pediatric review</li><li><i class="fa-solid fa-check"></i>Care coordinator</li></ul><a class="btn btn-primary ripple" href="#appointment">Book Now</a></article>
+            <article class="package-card hover-lift"><h3>Corporate Package</h3><strong>$399</strong><ul><li><i class="fa-solid fa-check"></i>Employee wellness</li><li><i class="fa-solid fa-check"></i>Analytics report</li><li><i class="fa-solid fa-check"></i>HR dashboard</li></ul><a class="btn btn-primary ripple" href="#appointment">Book Now</a></article>
+        </div></section>
+
+        <section class="appointment-cta" id="appointment"><div><span class="eyebrow">Need care today?</span><h2>Book a specialist appointment or call emergency support.</h2><div class="hero-actions"><a class="btn btn-primary ripple" href="#appointment-form">Book Appointment</a><a class="btn btn-soft ripple" href="tel:+911800123456">Emergency Call</a></div></div><img src="https://images.unsplash.com/photo-1587745416684-47953f16f02f?auto=format&fit=crop&w=900&q=84" alt="Ambulance"></section>
+        <section class="section"><form class="appointment-form" id="appointment-form" data-validate-form><label>Name<input required autocomplete="name"></label><label>Email<input type="email" required autocomplete="email"></label><label>Phone<input required autocomplete="tel"></label><label>Department<select required><option>Cardiology</option><option>Emergency</option><option>Radiology</option></select></label><label>Preferred Date<input type="datetime-local" required></label><label class="span-2">Reason<textarea required maxlength="1000"></textarea></label><button class="btn btn-primary span-2 ripple" type="submit">Request Appointment</button></form></section>
+
+        <section class="section testimonials-section"><div class="section-heading section-heading--center"><span class="eyebrow">Testimonials</span><h2>What patients say</h2></div><div class="swiper testimonial-swiper"><div class="swiper-wrapper">
+            <article class="swiper-slide testimonial-card"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=82" alt="Patient"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p>The cardiology team explained every step clearly and records were available on my phone.</p><strong>Priya Menon</strong><span>Cardiology Patient</span></article>
+            <article class="swiper-slide testimonial-card"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=82" alt="Patient"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p>Ambulance coordination was fast, triage was calm, and my family received real-time updates.</p><strong>Ravi Kumar</strong><span>Emergency Patient</span></article>
+            <article class="swiper-slide testimonial-card"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=82" alt="Patient"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p>Our care coordinator made every appointment, lab test, and insurance approval effortless.</p><strong>Sneha Rao</strong><span>Maternity Patient</span></article>
+            <article class="swiper-slide testimonial-card"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=82" alt="Patient"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><p>Excellent surgical planning, transparent billing, and physiotherapy follow-up.</p><strong>Amit Shah</strong><span>Orthopedic Patient</span></article>
+        </div><div class="swiper-pagination"></div></div></section>
+
+        <section class="section blog-section" id="blog"><div class="section-heading section-heading--center"><span class="eyebrow">Latest Blog</span><h2>Health insights from our care teams</h2></div><div class="blog-grid"><article class="blog-card hover-lift"><img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=900&q=82" alt="Blog"><div><span>Jul 01, 2026 - Emergency</span><h3>How AI Triage Helps Emergency Teams Move Faster</h3><p>By MedovaCare Desk</p><a href="#blog">Read More <i class="fa-solid fa-arrow-right"></i></a></div></article><article class="blog-card hover-lift"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=82" alt="Blog"><div><span>Jun 28, 2026 - Wellness</span><h3>Five Preventive Tests Every Family Should Schedule</h3><p>By Dr. Nisha Iyer</p><a href="#blog">Read More <i class="fa-solid fa-arrow-right"></i></a></div></article><article class="blog-card hover-lift"><img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=900&q=82" alt="Blog"><div><span>Jun 24, 2026 - Patient Care</span><h3>Digital Health Records: What Patients Should Know</h3><p>By Care Team</p><a href="#blog">Read More <i class="fa-solid fa-arrow-right"></i></a></div></article></div></section>
+
+        <section class="section faq-section" id="faq"><div class="section-heading section-heading--center"><span class="eyebrow">FAQ</span><h2>Answers before your visit</h2></div><label class="faq-search"><i class="fa-solid fa-magnifying-glass"></i><input data-faq-search type="search" placeholder="Search FAQ"></label><div class="faq-list">
+            <details class="faq-item" data-faq-item open><summary>How do I book an appointment?</summary><p>Use the appointment form, call the care desk, or open the patient portal.</p></details>
+            <details class="faq-item" data-faq-item><summary>Is emergency care available 24x7?</summary><p>Yes, emergency, ambulance, ICU escalation, and trauma response stay active.</p></details>
+            <details class="faq-item" data-faq-item><summary>Can I consult doctors online?</summary><p>Yes, secure video consultations are available for selected specialties.</p></details>
+            <details class="faq-item" data-faq-item><summary>Do you support insurance approvals?</summary><p>Our billing desk coordinates cashless and reimbursement documentation.</p></details>
+            <details class="faq-item" data-faq-item><summary>Can I access records online?</summary><p>Patients can view prescriptions, lab reports, bills, and discharge summaries.</p></details>
+        </div></section>
+
+        <section class="section partners-section"><div class="section-heading section-heading--center"><span class="eyebrow">Insurance Partners</span><h2>Cashless insurance workflows</h2></div><div class="partner-strip"><span>CareShield</span><span>Star Health</span><span>Aetna Global</span><span>Bajaj Health</span><span>MediSecure</span><span>LifeCover</span></div></section>
+
+        <section class="section gallery-section" id="gallery"><div class="section-heading section-heading--center"><span class="eyebrow">Gallery</span><h2>Inside MedovaCare</h2></div><div class="gallery-grid">
+            <button data-gallery-image="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=84"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=84" alt="Hospital"></button>
+            <button data-gallery-image="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=84"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=84" alt="Hospital"></button>
+            <button data-gallery-image="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=84"><img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=84" alt="Hospital"></button>
+        </div></section>
+
+        <section class="section app-download" id="records"><div><div class="section-heading"><span class="eyebrow">Mobile App</span><h2>Carry your hospital in your pocket</h2><p>Appointments, reports, prescriptions, bills, insurance, and notifications stay connected.</p></div><div class="store-buttons"><a href="#"><i class="fa-brands fa-google-play"></i><span>Android</span></a><a href="#"><i class="fa-brands fa-apple"></i><span>iOS</span></a></div></div><div class="qr-card"><span></span><span></span><span></span><span></span><strong>Scan App</strong></div></section>
+        <section class="newsletter-band"><div><span class="eyebrow">Newsletter</span><h2>Get monthly health guidance from MedovaCare doctors.</h2></div><form data-newsletter-form><input type="email" placeholder="Enter email address" required><button class="btn btn-primary ripple" type="submit">Subscribe</button></form></section>
+        <section class="map-preview" id="contact"><div><span class="eyebrow">Hospital Location</span><h2>MedovaCare Smart Hospital, Bengaluru</h2><p>Outer Ring Road, near HealthTech Park, Bengaluru, Karnataka 560103</p><a class="btn btn-primary ripple" href="https://maps.google.com/?q=Bengaluru%20hospital" target="_blank" rel="noopener">Get Direction</a></div><iframe title="MedovaCare map preview" loading="lazy" src="https://maps.google.com/maps?q=Bengaluru%20hospital&t=&z=12&ie=UTF8&iwloc=&output=embed"></iframe></section>
+    </main>
+
+    <footer class="site-footer premium-footer">
+        <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark"><i class="fa-solid fa-heart-pulse"></i></span><span>MedovaCare</span></a><p>Advanced AI Powered Hospital Management System for hospitals, clinics, diagnostics, pharmacy, and connected patient care.</p><div class="social-links"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div></div>
+        <div><h3>Quick Links</h3><a href="#about">About</a><a href="#services">Services</a><a href="#doctors">Doctors</a><a href="#contact">Contact</a></div>
+        <div><h3>Departments</h3><a href="#departments">Cardiology</a><a href="#departments">Neurology</a><a href="#departments">Radiology</a><a href="#departments">Emergency</a></div>
+        <div><h3>Working Hours</h3><p>Emergency: 24x7</p><p>OPD: 8:00 AM - 8:00 PM</p><form class="footer-newsletter"><input type="email" placeholder="Email address" required><button class="btn btn-primary" type="submit">Subscribe</button></form></div>
+        <div class="footer-bottom"><span>© 2025 AarogyaCare. <a href="https://iitdeveloper.com/" target="_blank" rel="noopener">IIT-Developer</a> ke through banaya gaya. All rights reserved.</span><div><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+    </footer>
+
+    <button class="back-to-top" data-back-top aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="gallery-lightbox" data-gallery-lightbox hidden><button class="icon-button" data-gallery-close><i class="fa-solid fa-xmark"></i></button><img src="" alt="Expanded gallery"></div>
+    <script>
+        window.medovaInlineRan = true;
+        window.addEventListener('error', event => {
+            window.__liveErrors = window.__liveErrors || [];
+            window.__liveErrors.push(event.message);
+        });
+        const root = document.documentElement;
+        window.addEventListener('load', () => document.querySelector('[data-loader]')?.classList.add('is-hidden'));
+        const header = document.querySelector('[data-site-header]');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('is-scrolled', window.scrollY > 24);
+            document.querySelector('[data-back-top]').classList.toggle('is-visible', window.scrollY > 500);
+        });
+        document.querySelector('[data-back-top]').addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+        document.querySelector('[data-theme-toggle]').addEventListener('click', () => root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark');
+        document.querySelector('[data-mobile-menu-button]').addEventListener('click', (event) => {
+            const menu = document.querySelector('[data-mobile-menu]');
+            const open = menu.classList.toggle('is-open');
+            event.currentTarget.setAttribute('aria-expanded', String(open));
+        });
+        const overlay = document.querySelector('[data-search-overlay]');
+        document.querySelector('[data-search-toggle]').addEventListener('click', () => { overlay.hidden = false; overlay.querySelector('input').focus(); });
+        document.querySelector('[data-search-close]').addEventListener('click', () => overlay.hidden = true);
+        overlay.addEventListener('click', event => { if (event.target === overlay) overlay.hidden = true; });
+        function toast(message) { const el = document.createElement('div'); el.className = 'toast is-visible'; el.textContent = message; document.body.appendChild(el); setTimeout(() => el.remove(), 2800); }
+        document.querySelectorAll('[data-toast]').forEach(btn => btn.addEventListener('click', () => toast(btn.dataset.toast)));
+        document.querySelectorAll('form').forEach(form => form.addEventListener('submit', event => { event.preventDefault(); if (form.checkValidity()) { toast('Request received successfully.'); form.reset(); } else { form.reportValidity(); } }));
+        const counters = document.querySelectorAll('[data-counter]');
+        const counterObserver = new IntersectionObserver(entries => entries.forEach(entry => { if (!entry.isIntersecting) return; counters.forEach(counter => { let target = Number(counter.dataset.counter), suffix = counter.dataset.suffix || '', start = performance.now(); function step(now){ let p = Math.min((now-start)/1400,1); counter.textContent = Math.round(target*p).toLocaleString()+suffix; if(p<1) requestAnimationFrame(step); } requestAnimationFrame(step); }); counterObserver.disconnect(); }), {threshold: .3});
+        counterObserver.observe(document.querySelector('[data-counter-section]'));
+        const slides = [...document.querySelectorAll('.testimonial-swiper .swiper-slide')];
+        window.medovaSliderIndex = 0;
+        window.medovaSliderFallback = true;
+        function showSlide(index) {
+            window.medovaSliderIndex = slides.length ? index % slides.length : 0;
+            slides.forEach((slide, slideIndex) => {
+                slide.style.display = slideIndex === window.medovaSliderIndex ? 'block' : 'none';
+                slide.style.maxWidth = '680px';
+                slide.style.margin = '0 auto';
+            });
+        }
+        showSlide(0);
+        setInterval(() => showSlide(window.medovaSliderIndex + 1), 2200);
+        document.querySelector('[data-faq-search]').addEventListener('input', event => document.querySelectorAll('[data-faq-item]').forEach(item => item.hidden = !item.textContent.toLowerCase().includes(event.target.value.toLowerCase())));
+        const lightbox = document.querySelector('[data-gallery-lightbox]');
+        document.querySelectorAll('[data-gallery-image]').forEach(button => button.addEventListener('click', () => { lightbox.querySelector('img').src = button.dataset.galleryImage; lightbox.hidden = false; }));
+        document.querySelector('[data-gallery-close]').addEventListener('click', () => lightbox.hidden = true);
+        lightbox.addEventListener('click', event => { if (event.target === lightbox) lightbox.hidden = true; });
+    </script>
+    <script>
+        setTimeout(() => {
+            if (!document.querySelector('.testimonial-swiper')?.swiper && typeof window.medovaSliderIndex !== 'number') {
+                const slides = [...document.querySelectorAll('.testimonial-swiper .swiper-slide')];
+                window.medovaSliderIndex = 0;
+                window.medovaSliderFallback = true;
+                const showSlide = index => {
+                    window.medovaSliderIndex = slides.length ? index % slides.length : 0;
+                    slides.forEach((slide, slideIndex) => {
+                        slide.style.display = slideIndex === window.medovaSliderIndex ? 'block' : 'none';
+                        slide.style.maxWidth = '680px';
+                        slide.style.margin = '0 auto';
+                    });
+                };
+                showSlide(0);
+                setInterval(() => showSlide(window.medovaSliderIndex + 1), 2200);
+            }
+        }, 400);
+    </script>
+</body>
+</html>
+
+
+
+

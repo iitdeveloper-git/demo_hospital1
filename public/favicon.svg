@@ -1,0 +1,15 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AarogyaCare logo">
+  <defs>
+    <linearGradient id="g" x1="10" y1="8" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8fd8ff"/>
+      <stop offset="0.55" stop-color="#54b9f3"/>
+      <stop offset="1" stop-color="#4169e1"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#0b5aa8" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#g)"/>
+  <path filter="url(#s)" d="M32 50S13 38.8 13 25.7C13 18.8 18.1 14 24.2 14c3.6 0 6.3 1.8 7.8 4.4C33.5 15.8 36.2 14 39.8 14 45.9 14 51 18.8 51 25.7 51 38.8 32 50 32 50Z" fill="#fff"/>
+  <path d="M15 31h9l3.4-7.6 6.8 17.2 4.6-10.6H49" fill="none" stroke="#54b9f3" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

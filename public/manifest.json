@@ -1,0 +1,15 @@
+{
+  "name": "AarogyaCare Enterprise ERP",
+  "short_name": "AarogyaCare",
+  "start_url": "/",
+  "background_color": "#0b2454",
+  "theme_color": "#14b8a6",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
