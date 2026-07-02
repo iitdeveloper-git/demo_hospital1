@@ -1,0 +1,51 @@
+﻿[build]
+  command = "npm run netlify:build"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/"
+  to = "/preview.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/services"
+  to = "/services.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/angioplasty-stenting"
+  to = "/services/angioplasty-stenting.html"
+  status = 200
+
+[[redirects]]
+  from = "/doctors"
+  to = "/doctors.html"
+  status = 200
+
+[[redirects]]
+  from = "/doctors/dr-aanya-sharma"
+  to = "/doctors/dr-aanya-sharma.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/clients"
+  to = "/clients.html"
+  status = 200
+
+[[redirects]]
+  from = "/booking"
+  to = "/booking.html"
+  status = 200

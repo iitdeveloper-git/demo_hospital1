@@ -1,21 +1,22 @@
-{
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "dev": "vite --host 127.0.0.1",
-        "build": "vite build"
-    },
-    "devDependencies": {
-        "autoprefixer": "^10.4.20",
-        "concurrently": "^9.1.0",
-        "laravel-vite-plugin": "^1.2.0",
-        "postcss": "^8.4.49",
-        "vite": "^6.0.0"
-    },
-    "dependencies": {
-        "aos": "^2.3.4",
-        "chart.js": "^4.4.7",
-        "gsap": "^3.12.5",
-        "swiper": "^14.0.1"
-    }
+﻿{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "netlify:build": "node -e \"console.log('Netlify static deploy: publishing public directory')\""
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "laravel-vite-plugin": "^1.2.0",
+    "postcss": "^8.4.49",
+    "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "chart.js": "^4.4.7",
+    "gsap": "^3.12.5",
+    "swiper": "^14.0.1"
+  }
 }
