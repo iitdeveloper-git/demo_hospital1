@@ -37,6 +37,8 @@ const server = createServer(async (request, response) => {
             pathname = `/public${pathname}`;
         } else if (pathname === '/about') {
             pathname = '/public/about.html';
+        } else if (pathname === '/dashboard') {
+            pathname = '/public/dashboard.html';
         } else if (pathname === '/booking') {
             pathname = '/public/booking.html';
         } else if (pathname === '/contact') {
@@ -72,5 +74,6 @@ server.listen(port, host, () => {
         console.log('  Network: connect this computer to Wi-Fi/LAN to get a phone/tablet URL.');
     }
 });
+
 
 

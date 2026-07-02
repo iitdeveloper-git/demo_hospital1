@@ -212,12 +212,51 @@ body{color:var(--ac-text);background:#f6fbff!important}.ac-header,.header,.site-
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div><strong>AarogyaCare</strong><p>Advanced AI Powered Hospital Management System.</p></div>
-        <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="/#dashboard">Admin Portal</a></div><div class="footer-credit">© 2025 AarogyaCare. <a href="https://iitdeveloper.com/" target="_blank" rel="noopener">IIT-Developer</a> ke through banaya gaya. All rights reserved.</div>
+        <footer class="site-footer service-footer">
+        <div class="service-footer-inner">
+            <div class="service-footer-brand">
+                <a class="footer-brand" href="/"><span class="footer-brand-mark"><i class="fa-solid fa-heart-pulse"></i></span>AarogyaCare</a>
+                <p>Premium hospital care, diagnostics, emergency support, pharmacy, insurance and digital patient experience.</p>
+            </div>
+            <div>
+                <h3>Departments</h3>
+                <a href="/services">Cardiology</a>
+                <a href="/services">Diagnostics</a>
+                <a href="/services">Emergency</a>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <a href="/about">About</a>
+                <a href="/doctors">Doctors</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/booking">Book Appointment</a>
+                <a href="/clients">Insurance Partners</a>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>+91 1800 123 456<br>Bengaluru, Karnataka<br>care@aarogyacare.test</p>
+            </div>
+        </div>
+        <div class="service-footer-bottom">© 2025 AarogyaCare. <a href="https://iitdeveloper.com/" target="_blank" rel="noopener">IIT-Developer</a> ke through banaya gaya. All rights reserved.</div>
     </footer>
 
     <style>
+    .service-footer{padding:56px 0 0!important;background:#10213a!important;color:#c8d5e4!important;border-top:1px solid rgba(143,216,255,.18)}
+    .service-footer-inner{width:min(1180px,calc(100% - 34px));margin:auto;display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:30px;align-items:start}
+    .service-footer h3{margin:0 0 14px;color:#fff;font-size:16px}
+    .service-footer a{display:block;color:#a9bbcd;text-decoration:none;line-height:1.9;font-size:14px}
+    .service-footer a:hover{color:#8fd8ff}
+    .service-footer p{margin:0;color:#a9bbcd;line-height:1.8;font-size:14px}
+    .footer-brand{display:flex!important;align-items:center;gap:10px;color:#fff!important;font-weight:900;font-size:18px;line-height:1.2!important;margin-bottom:14px}
+    .footer-brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:10px;color:#fff;background:linear-gradient(135deg,#45aeea,#78d5ff)}
+    .service-footer-bottom{width:min(1180px,calc(100% - 34px));margin:34px auto 0;padding:18px 0;border-top:1px solid rgba(255,255,255,.08);color:#8fa2b6;font-size:13px}
+    .service-footer-bottom a{display:inline;color:#8fd8ff;font-weight:900;line-height:inherit}
+    @media(max-width:900px){.service-footer-inner{grid-template-columns:1fr 1fr}.service-footer-brand{grid-column:1/-1}}
+    @media(max-width:560px){.service-footer-inner{grid-template-columns:1fr}.service-footer{padding-top:42px!important}}
     /* Custom Styling for Showcase preview */
     .services-hero {
         height: 35vh;
@@ -569,6 +608,8 @@ body{color:var(--ac-text);background:#f6fbff!important}.ac-header,.header,.site-
 <div class="floating-contact" aria-label="Quick contact"><a class="whatsapp" href="https://wa.me/911800123456?text=Hello%20AarogyaCare%2C%20I%20want%20to%20book%20an%20appointment" target="_blank" rel="noopener" aria-label="WhatsApp AarogyaCare"><i class="fa-brands fa-whatsapp"></i></a><a class="call" href="tel:+911800123456" aria-label="Call AarogyaCare"><i class="fa-solid fa-phone"></i></a></div>
 </body>
 </html>
+
+
 
 
 
